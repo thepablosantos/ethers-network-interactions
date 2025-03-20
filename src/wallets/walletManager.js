@@ -15,7 +15,7 @@ function createRandomWallet() {
 // 2️⃣ - Load wallet from mnemonic
 function loadWalletFromMnemonic(mnemonic) {
   try {
-    const wallet = ethers.Wallet.fromMnemonic(mnemonic);
+    const wallet = ethers.Wallet.fromPhrase(mnemonic);
     console.log("✅ Wallet loaded from mnemonic:");
     console.log(`Address: ${wallet.address}`);
     return wallet;
