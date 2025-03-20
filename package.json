@@ -1,0 +1,27 @@
+{
+  "name": "ethers-network-interactions",
+  "version": "1.0.0",
+  "description": "Toolkit to interact with Ethereum blockchain using Ethers.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "ethers",
+    "ethereum",
+    "blockchain",
+    "web3",
+    "wallet",
+    "smart-contracts"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
