@@ -5,13 +5,9 @@ Toolkit to interact with the Ethereum blockchain using **Ethers.js**.
 ## 🚀 Features
 
 - 🔐 **Wallet Management**: Create wallets, import private keys, manage mnemonic phrases.
-- 💰 **Check Wallet Balances**: Retrieve ETH & ERC-20 token balances.
+- 💰 **Check Wallet Balances**: Retrieve ETH balances.
 - 📦 **Block & Transaction Details**: Get block information, transaction receipt & status.
 - 🚀 **Send Transactions**: Simple ETH transfers.
-- 📄 **Understanding ABIs**: What are ABIs and how to use them.
-- 💡 **Smart Contract Interaction**:
-  - Read/write contract data (ERC-20 tokens, structs, enums, arrays).
-  - Send complex transactions (passing structs, arrays, enums as parameters).
 
 ---
 
@@ -23,9 +19,9 @@ ethers-network-interactions/
 │   ├── config/           # RPC URLs, private keys, etc.
 │   ├── wallets/          # Wallet creation & management
 │   ├── balance/          # Balance checking scripts
-│   ├── transactions/     # ETH & contract transaction scripts
-│   ├── contracts/        # Contract ABIs, interaction logic
-│   └── utils/            # Helper functions
+│   ├── transactions/     # ETH transaction & details scripts
+│   ├── blocks/           # Block data scripts
+│   └── utils/            # Helper functions (optional)
 ├── .env.example          # Environment variables template
 ├── README.md
 └── package.json
@@ -43,11 +39,7 @@ ethers-network-interactions/
 | 4    | Read block details (latest, by number/hash)                        | `feat: fetch block details`              |
 | 5    | Read transaction details                                           | `feat: fetch transaction details`        |
 | 6    | Send simple ETH transaction                                        | `feat: send ETH transaction`             |
-| 7    | Explain & add sample ABI                                           | `docs: ABI explanation with example`     |
-| 8    | Interact with ERC-20: read balance, send tokens                    | `feat: erc20 token interaction`          |
-| 9    | Read complex contract data (structs, enums, arrays)                | `feat: read complex contract data`       |
-| 10   | Write complex contract data (send struct, enum, array params)      | `feat: send complex contract data`       |
-| 11   | Final polish: README, best practices, error handling, env usage    | `chore: project polishing and README`    |
+| 7    | Final polish: README update, best practices, error handling        | `chore: project polishing and README`    |
 
 ---
 
@@ -94,3 +86,8 @@ RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID
 MIT
 
 ---
+
+## 🚀 Possible Future Enhancements
+
+- ERC-20 token interaction
+- Reading & writing complex smart contract data (structs, arrays, enums)
